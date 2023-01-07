@@ -1,80 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+.header {
+  background-color: black;
+  position: relative;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
-
-.search-box{
-    position: absolute;
-    left: 360%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-
-    background: #fff;
-    height: 50px;
-    padding: 10px;
-    border-radius: 100px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}.search-text {
-    background: none;
-    border: 0;
-    outline: 0;
-    width: 0;
-
-    padding: 0;
-
-    font-size: 16px;
-
-    transition: 0.4s;
-}
-.search-btn{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    cursor: pointer;
-}
-.search-box:hover > .search-text {
-    width: 320px;
-    padding-left: 20px;
-}
-.search-box:hover > .search-btn .loupe-blue{
-    display: none;
-}
 .ifoodlogo {
-    width: 150px;
-    cursor: pointer;
-   
-   
+  width: 150px;
+  padding: 1rem;
+  border-radius: 25%;
+  cursor: pointer;
 }
+
+.menu {
+  position: absolute;
+  left: 6em;
+  bottom: 1.5em;
+  font-variant: small-caps;
+  color: white;
+  font-size: 30px;
+}
+
 .menu ul {
   list-style: none;
 }
+
 .menu li {
-   display: block;
+  display: block;
 }
-.menu{
-    position: absolute;
-    left: 125px;
-    bottom: 1px;
-    font-variant: small-caps ;
-    color: white;
-    font-size: 30px;
+
+.search-box {
+  position: absolute;
+  left: 70rem;
+  top: 2em;
+  transform: translate(-100%, -50%);
+  background: #fff;
+  height: 50px;
+  padding: 10px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header {
-    background-color: black;
-    position: relative;
+
+.search-text {
+  background: none;
+  border: 0;
+  outline: 0;
+  width: 0;
+  padding: 0;
+  font-size: 16px;
+  transition: 0.4s;
 }
- 
+
+.search-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-box:hover > .search-text {
+  width: 320px;
+  padding-left: 20px;
+}
+
+.search-box:hover > .search-btn .img-search-btn {
+  display: none;
+}
+
+.img-search-btn {
+  width: 25px;
+  height: 25px;
+}
+
+.content {
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  width: 100vw;
+}
